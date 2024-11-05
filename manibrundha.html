@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 10px 0;
+    transition: background-color 0.3s;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar ul li a {
+    color: rgb(26, 158, 149);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ff006f; 
+}
+
+.content {
+    padding-top: 80px;
+}
+
+section {
+    padding: 100px;
+    height: 100vh;
+}
+
+/* Change background color when scrolling */
+.scrolled {
+    background-color: #555555;
+}
+</style>
+<body>
+
+<nav class="navbar" id="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="content">
+    <!-- Content of the page goes here -->
+    <section id="home">Home Section</section>
+    <section id="about">About Section</section>
+    <section id="services">Services Section</section>
+    <section id="contact">Contact Section</section>
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>
